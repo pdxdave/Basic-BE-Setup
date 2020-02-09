@@ -51,4 +51,7 @@ const configOptions = require('../knexfile').development;
 module.exports = knex(configOptions);
 ````
 
+### Router and Module
+This is stuff you've done several times already.  I would suggest doing a simple GET first to see if you can get all on your seeds on Postman or Insomnia.  
+
 
