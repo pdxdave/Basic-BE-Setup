@@ -32,9 +32,22 @@ development : {
 6. This will create a migrations folder and a data folder with the link to your db3 file.  In my example above it would be rolex.db3.    
 
 ### Migrations
-1. Setup your migrations.  I think you have enough examples already to draw up to see how to do this.
-2. When your migrations are setup, at the termianl type ```npx knex migrate:latest```
+1. Setup your migrations.  I think you have enough examples already to draw upon to see how to do this.
+2. When your migrations are setup, at the terminal type ```npx knex migrate:latest```
 3. To undo the migrations type ```npx knex migrate:rollback```
 
+### Seeds
+1. At the terminal type ```npx  knex seed:make  001-whatever_you_want_to_call_your_seeds```.  Be sure to number them.
+2. Again, I think you have enough examples to draw upon to see how the seeds are made.
+
+### Config file
+1. Create a utils folder, and inside that create your link to the database.  It's the one that looks like this.    
+```
+const knex = require('knex');
+
+const configOptions = require('../knexfile').development;
+
+module.exports = knex(configOptions);
+````
 
 
