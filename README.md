@@ -28,7 +28,7 @@ development : {
 }
 ```
 4. NOTE!!!! When you get into deploying the website (e.g., heroku), the basic knexfile.js above will change quite a bit. 
-5. When this is setup properly, at the terminal type 
+5. When this is setup properly, at the terminal type         
 ```npx knex migrate:make whatever_you_want_to_call_your_table```
 6. This will create a migrations folder and a data folder with the link to your db3 file.  In my example above it would be rolex.db3.    
 
