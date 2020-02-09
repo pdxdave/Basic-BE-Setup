@@ -17,7 +17,7 @@ This is a loose guide for setting up a backend for React
 1. Make sure sqlite and knex are installed.  You can see in the package.json
 2. Starting with knex, at the terminal type ```npx knex it```.  This will create a knexfile.js.    
 3. In knexfile.js, the minamal setup should have `
-``  development : {
+```  development : {
          client: 'sqlite3',
           useNullAsDefault: true
         connection” {
