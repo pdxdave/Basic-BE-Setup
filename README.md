@@ -16,14 +16,14 @@ This is a loose guide for setting up a backend for React
 ### Database
 1. Make sure sqlite and knex are installed.  You can see in the package.json
 2. Starting with knex, at the terminal type ```npx knex it```.  This will create a knexfile.js.    
-3. In knexfile.js, the minamal setup should have `
+3. In knexfile.js, the minamal setup should have
 ```  development : {
          client: 'sqlite3',
-          useNullAsDefault: true
+         useNullAsDefault: true
         connection” {
-              filename: './data/whatever_name_you_want_for_the_database.db3'
-       }   
-} 
+              filename: './ data/rolex.db3'
+       },
+}
 ```
 4. NOTE!!!! When you get into deploying the webiste (e.g., heroku), the basic knexfile.js above will change quite a bit. 
 
