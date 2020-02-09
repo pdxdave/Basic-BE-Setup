@@ -23,13 +23,18 @@ development : {
          client: 'sqlite3',
          useNullAsDefault: true
         connection” {
-              filename: './ data/rolex.db3'
+              filename: './data/rolex.db3'
        },
 }
 ```
 4. NOTE!!!! When you get into deploying the website (e.g., heroku), the basic knexfile.js above will change quite a bit. 
-5. When this is setup properly at the terminal type ```npx knex migrate:make whatever_you_want_to_call_your_table```
+5. When this is setup properly, at the terminal type ```npx knex migrate:make whatever_you_want_to_call_your_table```
 6. This will create a migrations folder and a data folder with the link to your db3 file.  In my example above it would be rolex.db3.    
+
+### Migrations
+1. Setup your migrations.  I think you have enough examples already to draw up to see how to do this.
+2. When your migrations are setup, at the termianl type ```npx knex migrate:latest```
+3. To undo the migrations type ```npx knex migrate:rollback```
 
 
 
